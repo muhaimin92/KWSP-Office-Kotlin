@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KWSP Offices</string>
+    <string name="search_desc">Serach by office name or street name</string>
+    <string name="epf_off">EPF Offices</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_branch_detail">Map</string>
+</resources>

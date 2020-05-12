@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/category_row_layout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:weightSum="1"
+    android:clickable="true"
+    android:background="@drawable/shape_bottom_line">
+
+    <TextView
+        android:id="@+id/state_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".8"
+        tools:text="State"
+        style="@style/TextAppearance.AppCompat.Subhead"/>
+
+    <ImageView
+        android:id="@+id/selected_iv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".2"
+        android:src="@drawable/ic_check"
+        android:tint="@color/blue_500"
+        android:scaleType="center"/>
+
+</LinearLayout>

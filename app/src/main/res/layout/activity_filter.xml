@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/section_2_lyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_5"
+        android:paddingStart="16dp"
+        android:paddingTop="@dimen/spacing_large"
+        android:paddingEnd="16dp"
+        android:paddingBottom="@dimen/spacing_large"
+        android:text="Sort"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/blue_500" />
+
+    <LinearLayout
+        android:id="@+id/name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bottom_line"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:weightSum="1">
+
+        <TextView
+
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:text="Name" />
+
+        <ImageView
+            android:id="@+id/name_iv"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:scaleType="center"
+            android:src="@drawable/ic_check"
+            android:tint="@color/blue_500" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/distance_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bottom_line"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:weightSum="1">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:text="Distance" />
+
+        <ImageView
+            android:id="@+id/distance_iv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:scaleType="center"
+            android:visibility="gone"
+            android:src="@drawable/ic_check"
+            android:tint="@color/blue_500" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_5"
+        android:paddingStart="16dp"
+        android:paddingTop="@dimen/spacing_large"
+        android:paddingEnd="16dp"
+        android:paddingBottom="@dimen/spacing_large"
+        android:text="Filter"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/blue_500" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/state_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_bar"/>
+
+
+</LinearLayout>
